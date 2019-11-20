@@ -72,19 +72,19 @@ int main() {
         pq.push(videoGame);
     }
     cout << "Writing data in stack inserted at head into stacked.txt" << endl;
-    while (!s.empty())
+    while (!s.empty())//While empty output and then pop
     {
         stack << s.top();
         s.pop();
     }
     cout << "Writing data in queue inserted at tail into queue.txt" << endl;
-    while (!q.empty())
+    while (!q.empty())//While empty output and then pop
     {
         queue << q.front();
         q.pop();
     }
     cout << "Writing data in sorted linked list sorted by year into sort.txt" << endl;
-    while (!pq.empty())
+    while (!pq.empty()) //While empty output and then pop
     {
         sort << pq.top();
         pq.pop();
